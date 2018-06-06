@@ -69,7 +69,7 @@ class App extends Component {
           })}
 
           <Sound
-            url={'/carlos.mp3'}
+            url={process.env.PUBLIC_URL + '/carlos.mp3'}
             playStatus={this.state.playStatus}
             onLoading={() => {}}
             autoLoad={true}
