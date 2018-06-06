@@ -10,6 +10,11 @@ export const DATA = [
     "duration": 500
   },
   {
+    "label": "SKYRRR SKYRRR",
+    "time": 7300,
+    "duration": 4900
+  },
+  {
     "label": "Berlin Doppel-H",
     "time": 14300,
     "duration": 1800
@@ -31,7 +36,7 @@ export const DATA = [
   },
   {
     "label": "Anderes Thema, andere Gesellschaft",
-    "time": 42300,
+    "time": 42450,
     "duration": 2330
   },
   {
@@ -80,7 +85,7 @@ export const DATA = [
     "duration": 3050
   },
   {
-    "label": "Jeder will flown",
+    "label": "Jeder will flown...",
     "time": 138600,
     "duration": 1800
   },
@@ -100,13 +105,43 @@ export const DATA = [
     "duration": 5250
   },
   {
-    "label": "Dieser Sound",
+    "label": "Dieser Sound...",
     "time": 172800,
     "duration": 2300
   },
   {
     "label": "Zu Deutschem Rap gehört...",
     "time": 182100,
-    "duration": 3700
+    "duration": 2630
+  },
+  {
+    "label": "Ich geb ein Fick...",
+    "time": 184600,
+    "duration": 8700
+  },
+  {
+    "label": "Dnnddndnndnnnn",
+    "time": 191100,
+    "duration": 2000
+  },
+  {
+    "label": "MC Carlos relevant",
+    "time": 196700,
+    "duration": 1950
+  },
+  {
+    "label": "Wir bleiben real",
+    "time": 201000,
+    "duration": 1100
+  },
+  {
+    "label": "Sex Appeal",
+    "time": 205000,
+    "duration": 900
+  },
+  {
+    "label": "Jeder will natzen #2",
+    "time": 209700,
+    "duration": 3200
   }
 ]

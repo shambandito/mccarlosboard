@@ -20,6 +20,7 @@ class App extends Component {
     this.playSong = this.playSong.bind(this);
     this.handlePlaySound = this.handlePlaySound.bind(this);
     this.handleSongLoaded = this.handleSongLoaded.bind(this);
+    this.handleStopClick = this.handleStopClick.bind(this);
   }
 
   playSong() {
@@ -52,6 +53,15 @@ class App extends Component {
     console.log('Loaded');
   }
 
+  handleStopClick() {
+    window.clearInterval(this.playerTimeout); // reset timer
+
+    this.setState({
+      playStatus: Sound.status.STOPPED,
+      playPosition: 0
+    });
+  }
+
   render() {
     return (
       <div className="App">
@@ -68,6 +78,8 @@ class App extends Component {
             )
           })}
 
+          <SoundTile className="play-all-tile" onClick={this.playSong} label="Play Me All That Shit!"/>
+
           <Sound
             url={process.env.PUBLIC_URL + '/carlos.mp3'}
             playStatus={this.state.playStatus}
@@ -82,7 +94,7 @@ class App extends Component {
           />
         </div>
 
-        <button onClick={this.playSong}>Play Me All That Shit</button>
+        <button onClick={this.handleStopClick}>Stop Playback</button>
       </div>
     );
   }
@@ -91,7 +103,7 @@ class App extends Component {
 
 function SoundTile(props) {
   return (
-    <div className="sound-tile" onClick={() => { props.onClick(props.index) }}>
+    <div className={props.className + " sound-tile"} onClick={() => { props.onClick(props.index) }}>
       <span>{props.label}</span>
     </div>
   );
